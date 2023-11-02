@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Actividades Diarias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Control de Actividades Diarias</h1>
+  <form id="activity-form">
+    <label for="activity-name">Nombre de la Actividad:</label>
+    <input type="text" id="activity-name" required>
+    <label for="description">Descripción:</label>
+    <input type="text" id="description" required>
+    <label for="days">Cantidad de días:</label>
+    <input type="number" id="days" required>
+    <label for="start-date">Fecha de inicio:</label>
+    <input type="date" id="start-date" required>
+    <label for="end-date">Fecha de fin:</label>
+    <input type="date" id="end-date" required>
+    <label for="responsible">Responsable:</label>
+    <input type="text" id="responsible" required>
+    <button type="submit">Agregar Actividad</button>
+    <br>
+    <br>
+    <button type="button" id="save-button" style="display: none;">Guardar</button>
+  </form>
+  <ul id="activity-list"></ul>
+  <button id="clear-button">Limpiar Actividad</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
